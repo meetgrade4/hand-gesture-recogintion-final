@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hand Gesture Recognition</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    
+       <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <h2 id="heading">Hand gesture recognition</h2>
+        <span id="gesture_sub-heading">
+            <label>&#9995;</label>
+            <label>&#128076;</label>
+            <label>&#128077;</label>
+            <label>&#128078;</label>
+            <label>&#9994;</label>
+        </span>
+
+        <span>
+            <div>
+                <div id="camera">
+
+                </div>
+                <button onclick="capture();" class="btn" id="click-button">Take Photo</button>
+            </div>
+            <div>
+                <label id="text-result">The result</label>
+                <label id="emoji-result"></label>
+            </div>
+            <div>
+                <div id="result">
+
+                </div>
+                <button onclick="check();" class="btn" id="check-button">Check photo</button>
+            </div>
+        </span>
+<script src="main.js"></script>
+    </body>
+</html>
